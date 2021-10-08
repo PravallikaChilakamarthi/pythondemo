@@ -42,10 +42,10 @@ steps:
   displayName: 'use Python $(python.version)'
 
 
-  ` script: python "sum.py"
+- script: python "sum.py"
 
 
-Settings
+
 - task: PythonScript@0
 
 
