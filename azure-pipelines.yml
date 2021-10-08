@@ -11,29 +11,29 @@ trigger:
 pool:
 
 
-  vmImage:\'ubuntu-latest'
+  vmImage: 'ubuntu-latest'
 
 
-  strategy:
+strategy:
  
 
-     matrix:
+  matrix:
 
      
-       Python27:
+    Python27:
 
 
-         python.version: '2.7'
+      python.version: '2.7'
 
 
 
 steps:
 
-Settings
--task: UsePythonVersion@0
+
+- task: UsePythonVersion@0
 
 
-  inpuuts:
+  inputs:
 
     versionSpec: '$(python.version)'
     
@@ -42,11 +42,11 @@ Settings
   displayName: 'use Python $(python.version)'
 
 
-  - script: python "sum.py"
+  ` script: python "sum.py"
 
 
 Settings
-  -task: PythonScript@0
+- task: PythonScript@0
 
 
   inputs:
@@ -58,8 +58,8 @@ Settings
     script: |
 
     
-       print('This is section 1 azure demonstration')
+      print('This is azure demonstration')
 
 
-       print('kl CSE')
+      print('kl CSE')
   
